@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Lead_Score_Range</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( NOT($Profile.Name = &quot;System Administrator&quot;), ISCHANGED(Lead_Score__c) )</errorConditionFormula>
+    <errorDisplayField>Lead_Score__c</errorDisplayField>
+    <errorMessage>Lead Score is system-managed. Contact admin to change.</errorMessage>
+</ValidationRule>
